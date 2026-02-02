@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <meta name="description" content="A special 3D birthday wish for a special person.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <canvas id="birthday-canvas"></canvas>
+
+        <div class="content">
+            <header>
+                <h1 class="premium-title">Happy Birthday, <span class="highlight">My Love</span></h1>
+                <p class="subtitle">To the most incredible person in the world</p>
+            </header>
+
+            <main class="message-container">
+                <div class="card">
+                    <p class="message-text">
+                        Today is all about you! May your day be as beautiful and glowing as you are.
+                        I'm so lucky to have you in my life.
+                    </p>
+                    <button id="surprise-btn" class="glow-button">Open Your Surprise</button>
+                </div>
+            </main>
+
+            <footer>
+                <p>Made with Love ❤️</p>
+            </footer>
+        </div>
+
+        <div id="overlay" class="hidden">
+            <div class="modal">
+                <div id="phase-cake" class="modal-phase">
+                    <h2 class="phase-title">Making something sweet...</h2>
+                    <div id="cake-3d-container" class="canvas-3d-container">
+                        <canvas id="cake-canvas"></canvas>
+                    </div>
+                </div>
+
+                <div id="phase-love" class="modal-phase hidden">
+                    <h2 class="phase-title">I Love You!</h2>
+                    <div id="love-3d-container" class="canvas-3d-container">
+                        <canvas id="love-canvas"></canvas>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button id="close-btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
